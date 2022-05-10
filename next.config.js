@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const moduleExports = {
+  env: {
+    ENVIRONMNET: process.env.ENVIRONMNET,
+  },
+  images: {
+    domains: ['i.imgur.com'],
+  },
+  compiler: {
+    styledComponents: true,
+  },
+  experimental: { images: { layoutRaw: true } },
 }
 
-module.exports = nextConfig
+module.exports = moduleExports
