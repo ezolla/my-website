@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 
+import { ExternalArrow } from 'components/Icons'
+
 const Header = () => {
   return (
     <StyledHeader>
@@ -15,6 +17,7 @@ const Header = () => {
         <p>Frontend Software Engineer in Seattle, WA</p>
         <a href='mailto:ezoller11@gmail.com' target='_blank'>
           ezoller11@gmail.com
+          <ExternalArrow />
         </a>
       </div>
     </StyledHeader>
@@ -34,6 +37,12 @@ const StyledHeader = styled.header`
     a {
       font-size: 14px;
       color: var(--color-silver);
+
+      svg {
+        path {
+          fill: var(--color-silver);
+        }
+      }
     }
   }
 
