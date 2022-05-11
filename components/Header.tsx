@@ -36,4 +36,14 @@ const StyledHeader = styled.header`
       color: var(--color-silver);
     }
   }
+
+  @media (max-width: 460px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    div {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
 `

@@ -129,4 +129,14 @@ const Experience = styled.div`
   :not(:last-child) {
     margin-bottom: 36px;
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+
+    div {
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
 `

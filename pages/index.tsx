@@ -56,6 +56,7 @@ export default Home
 const Main = styled.main`
   max-width: 600px;
   margin: 72px auto;
+  padding: 0 24px;
 
   section:not(:last-child) {
     margin-bottom: 64px;

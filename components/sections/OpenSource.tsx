@@ -171,6 +171,10 @@ const Project = styled.div`
   :not(:last-child) {
     margin-bottom: 36px;
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const ProjectHeader = styled.div`
@@ -189,6 +193,10 @@ const ProjectHeader = styled.div`
     p:not(:last-child) {
       margin-right: 16px;
     }
+  }
+
+  @media (max-width: 560px) {
+    flex-direction: column;
   }
 `
 

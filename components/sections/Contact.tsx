@@ -53,4 +53,10 @@ const StyledContact = styled.section`
       margin-bottom: 16px;
     }
   }
+
+  @media (max-width: 400px) {
+    div {
+      grid-template-columns: 1fr;
+    }
+  }
 `
