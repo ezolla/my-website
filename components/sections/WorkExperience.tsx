@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { ExternalArrow } from 'components/Icons'
+
 const WorkExperience = () => {
   return (
     <StyledWorkExperience>
@@ -7,7 +9,12 @@ const WorkExperience = () => {
       <Experience>
         <p>2021 — Now</p>
         <div>
-          <h3>Full-Stack Engineer at Soleware</h3>
+          <h3>
+            <a href='https://soleware.io/' target='_blank'>
+              Full-Stack Engineer at Soleware
+              <ExternalArrow />
+            </a>
+          </h3>
           <p>Remote</p>
           <ul>
             <li>
@@ -32,7 +39,12 @@ const WorkExperience = () => {
       <Experience>
         <p>2020 — 2021</p>
         <div>
-          <h3>Frontend Engineer at Nyte Software</h3>
+          <h3>
+            <a href='https://nytesoftware.com/' target='_blank'>
+              Frontend Engineer at Nyte Software
+              <ExternalArrow />
+            </a>
+          </h3>
           <p>Remote</p>
           <ul>
             <li>
@@ -53,7 +65,12 @@ const WorkExperience = () => {
       <Experience>
         <p>2020 — 2020</p>
         <div>
-          <h3>Frontend Engineer at Scout App AI</h3>
+          <h3>
+            <a href='https://scoutapp.ai/' target='_blank'>
+              Frontend Engineer at Scout App AI
+              <ExternalArrow />
+            </a>
+          </h3>
           <p>Remote</p>
           <ul>
             <li>
@@ -93,6 +110,12 @@ const Experience = styled.div`
   grid-template-columns: 3fr 8fr;
 
   div {
+    h3 {
+      a {
+        color: var(--color-white);
+      }
+    }
+
     ul {
       margin: 12px 0 0 0;
       padding: 0;

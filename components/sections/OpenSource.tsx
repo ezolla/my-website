@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { ExternalArrow } from 'components/Icons'
+
 const OpenSource = () => {
   return (
     <StyledOpenSource>
@@ -8,99 +10,146 @@ const OpenSource = () => {
         <p>2022</p>
         <div>
           <ProjectHeader>
-            <h3>Twitch Chat Socket</h3>
+            <h3>
+              <a
+                href='https://github.com/ezolla/twitch-chat-socket'
+                target='_blank'
+              >
+                Twitch Chat Socket
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Typescript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>Mock Twitch chat server built with socket.io.</p>
+          <ProjectDescription>
+            Mock Twitch chat server built with socket.io.
+          </ProjectDescription>
         </div>
       </Project>
       <Project>
         <p>2020</p>
         <div>
           <ProjectHeader>
-            <h3>Twitter Monitor</h3>
+            <h3>
+              <a
+                href='https://github.com/ezolla/Twitter-Monitor'
+                target='_blank'
+              >
+                Twitter Monitor
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Javascript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>
+          <ProjectDescription>
             Monitor Twitter accounts with Discord webhooks. Built with Node.js,
             Twit, and Requests.
-          </p>
+          </ProjectDescription>
         </div>
       </Project>
       <Project>
         <p>2020</p>
         <div>
           <ProjectHeader>
-            <h3>SneakCord</h3>
+            <h3>
+              <a href='https://github.com/ezolla/SneakCord' target='_blank'>
+                SneakCord
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Typescript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>
+          <ProjectDescription>
             Powerful Discord bot with 20 plus commands designed to help sneaker
             reselling communities. Built with Node.js and many npm packages.
-          </p>
+          </ProjectDescription>
         </div>
       </Project>
       <Project>
         <p>2020</p>
         <div>
           <ProjectHeader>
-            <h3>Linear App Discord</h3>
+            <h3>
+              <a
+                href='https://github.com/ezolla/linear-app-discord'
+                target='_blank'
+              >
+                Linear App Discord
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Typescript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>
+          <ProjectDescription>
             Send webhooks alerts to Discord by listening to the new issue events
             on your Linear app workspace.
-          </p>
+          </ProjectDescription>
         </div>
       </Project>
       <Project>
         <p>2020</p>
         <div>
           <ProjectHeader>
-            <h3>Adidas Stock Checker</h3>
+            <h3>
+              <a
+                href='https://github.com/ezolla/Adidas-Stock-Checker'
+                target='_blank'
+              >
+                Adidas Stock Checker
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Javascript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>
+          <ProjectDescription>
             Check the stock levels for any Adidas products in realtime. Built
             with Node.js and requests.
-          </p>
+          </ProjectDescription>
         </div>
       </Project>
       <Project>
         <p>2020</p>
         <div>
           <ProjectHeader>
-            <h3>Crypto Price Checker</h3>
+            <h3>
+              <a
+                href='https://github.com/ezolla/Crypto-Price-Checker'
+                target='_blank'
+              >
+                Crypto Price Checker
+                <ExternalArrow />
+              </a>
+            </h3>
             <div>
               <p>Javascript</p>
               <p>0 Stars</p>
               <p>0 Forks</p>
             </div>
           </ProjectHeader>
-          <p>
+          <ProjectDescription>
             Search up crypto prices through Discord. Built with Node.js and
             requests.
-          </p>
+          </ProjectDescription>
         </div>
       </Project>
     </StyledOpenSource>
@@ -119,10 +168,6 @@ const Project = styled.div`
   display: grid;
   grid-template-columns: 3fr 8fr;
 
-  p {
-    margin-top: 4px;
-  }
-
   :not(:last-child) {
     margin-bottom: 36px;
   }
@@ -132,6 +177,12 @@ const ProjectHeader = styled.div`
   display: flex;
   justify-content: space-between;
 
+  h3 {
+    a {
+      color: var(--color-white);
+    }
+  }
+
   div {
     display: flex;
 
@@ -139,4 +190,8 @@ const ProjectHeader = styled.div`
       margin-right: 16px;
     }
   }
+`
+
+const ProjectDescription = styled.p`
+  margin-top: 4px;
 `

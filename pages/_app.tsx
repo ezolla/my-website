@@ -79,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
+    color: var(--color-grey);
     font-size: 14px;
     line-height: 22.4px;
     text-decoration: none;

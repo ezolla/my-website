@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { ExternalArrow } from 'components/Icons'
+
 const Contact = () => {
   return (
     <StyledContact>
@@ -8,12 +10,14 @@ const Contact = () => {
         <p>Email</p>
         <a href='mailto:ezoller11@gmail.com' target='_blank'>
           ezoller11@gmail.com
+          <ExternalArrow />
         </a>
       </div>
       <div>
         <p>GitHub</p>
         <a href='https://github.com/ezolla' target='_blank'>
           ezolla
+          <ExternalArrow />
         </a>
       </div>
       <div>
@@ -23,6 +27,7 @@ const Contact = () => {
           target='_blank'
         >
           ethanzoller
+          <ExternalArrow />
         </a>
       </div>
     </StyledContact>
