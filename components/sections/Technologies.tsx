@@ -47,6 +47,18 @@ const Technologies = () => {
           Styled Components
         </a>
         ,{' '}
+        <a href='https://mui.com/' target='_blank'>
+          Material UI
+        </a>
+        ,{' '}
+        <a href='https://storybook.js.org/' target='_blank'>
+          Storybook
+        </a>
+        ,{' '}
+        <a href='https://redux.js.org/' target='_blank'>
+          Redux
+        </a>
+        ,{' '}
         <a href='https://recoiljs.org/' target='_blank'>
           Recoil
         </a>

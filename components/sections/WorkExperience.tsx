@@ -7,7 +7,25 @@ const WorkExperience = () => {
     <StyledWorkExperience>
       <h2>Work Experience</h2>
       <Experience>
-        <p>2021 — Now</p>
+        <p>2022 — Now</p>
+        <div>
+          <h3>
+            <a href='https://branch.io/' target='_blank'>
+              Software Engineer at Branch
+              <ExternalArrow />
+            </a>
+          </h3>
+          <p>Seattle, WA</p>
+          <ul>
+            <li>
+              Recently joined the dashboard team to help build features, make
+              improvements, and fix bugs on the React codebases.
+            </li>
+          </ul>
+        </div>
+      </Experience>
+      <Experience>
+        <p>2021 — 2022</p>
         <div>
           <h3>
             <a href='https://soleware.io/' target='_blank'>
