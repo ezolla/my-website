@@ -14,7 +14,7 @@ const Header = () => {
       />
       <div>
         <h1>Ethan Zoller</h1>
-        <p>Frontend Software Engineer in Seattle, WA</p>
+        <p>Software Engineer in Seattle, WA</p>
         <a href='mailto:ezoller11@gmail.com' target='_blank'>
           ezoller11@gmail.com
           <ExternalArrow />
