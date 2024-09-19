@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { ExternalArrow } from 'components/Icons'
+import { ExternalArrow } from 'components/Icons';
 
 const WorkExperience = () => {
   return (
@@ -18,8 +18,21 @@ const WorkExperience = () => {
           <p>Seattle, WA</p>
           <ul>
             <li>
-              Recently joined the dashboard team to help build features, make
-              improvements, and fix bugs on the React codebases.
+              Lead multiple multi-sprint projects as the lead engineer handling
+              tech specs, timeline estimations, team communications, and of
+              course the implementation.
+            </li>
+            <li>
+              Refactored and migrated features written in 5+ year old React code
+              to modern coding practices with proper test coverage.
+            </li>
+            <li>
+              Added many features, improvements, and fixed bugs while writing
+              clean code with proper test coverage.
+            </li>
+            <li>
+              Active participant in reviewing pull requests and doing coding
+              challenge interviews with engineers of all levels.
             </li>
           </ul>
         </div>
@@ -112,16 +125,16 @@ const WorkExperience = () => {
         </div>
       </Experience>
     </StyledWorkExperience>
-  )
-}
+  );
+};
 
-export default WorkExperience
+export default WorkExperience;
 
 const StyledWorkExperience = styled.section`
   h2 {
     margin-bottom: 24px;
   }
-`
+`;
 
 const Experience = styled.div`
   display: grid;
@@ -157,4 +170,4 @@ const Experience = styled.div`
       }
     }
   }
-`
+`;
